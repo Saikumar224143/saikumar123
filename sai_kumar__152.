@@ -1,0 +1,498 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyM/GM1nZDIVBpgPhFSS7ZfJ",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Saikumar224143/saikumar123/blob/main/sai_kumar__152.\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "1Q(a): write a program to take input from the user for two values and add them together print the value."
+      ],
+      "metadata": {
+        "id": "lftqspcLVGLm"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Get input from the user\n",
+        "num1 = float(input(\"Enter the first number: \"))\n",
+        "num2 = float(input(\"Enter the second number: \"))\n",
+        "\n",
+        "# Add the numbers\n",
+        "sum_result = num1 + num2\n",
+        "\n",
+        "# Print the result\n",
+        "print(\"The sum of\", num1, \"and\", num2, \"is\", sum_result)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6XZEko1eWWv1",
+        "outputId": "d963c052-291c-4174-aee4-e893f19c7a14"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the first number: 78\n",
+            "Enter the second number: 88\n",
+            "The sum of 78.0 and 88.0 is 166.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "thwTycTtpGNm"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "(B): Take two strings from the user and concatenate them (input strings are: BCA students,are best )\n",
+        "output: the concatenated result is : BCA students are best."
+      ],
+      "metadata": {
+        "id": "erhYpwd0XuqC"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Get input strings from the user\n",
+        "string1 = input(\"Enter the first string: \")\n",
+        "string2 = input(\"Enter the second string: \")\n",
+        "\n",
+        "# Concatenate the two strings\n",
+        "result = string1 + \" \" + string2\n",
+        "\n",
+        "# Print the concatenated result\n",
+        "print(\"The concatenated result is:\", result)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QOjD6LXuYn7y",
+        "outputId": "91f87920-3f21-423b-a5f8-5bba75bec4b8"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the first string: 2\n",
+            "Enter the second string: 1\n",
+            "The concatenated result is: 2 1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2(a): Find the maximum of two numbers in python ."
+      ],
+      "metadata": {
+        "id": "xjqzyH8eY6ZM"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Get two numbers from the user\n",
+        "num1 = float(input(\"Enter the first number: \"))\n",
+        "num2 = float(input(\"Enter the second number: \"))\n",
+        "\n",
+        "# Find the maximum of the two numbers\n",
+        "maximum = max(num1, num2)\n",
+        "\n",
+        "# Print the maximum value\n",
+        "print(\"The maximum of\", num1, \"and\", num2, \"is\", maximum)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UGVvaxmFZLTQ",
+        "outputId": "3134220f-0145-407d-f4b5-f571d9593d0b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the first number: 20\n",
+            "Enter the second number: 10\n",
+            "The maximum of 20.0 and 10.0 is 20.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "(B): Write a python program to find the factorial of a number ."
+      ],
+      "metadata": {
+        "id": "4I2tm7vOZfzj"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Function to calculate factorial\n",
+        "def factorial(n):\n",
+        "    # Base case for factorial\n",
+        "    if n == 0 or n == 1:\n",
+        "        return 1\n",
+        "    else:\n",
+        "        return n * factorial(n - 1)\n",
+        "\n",
+        "# Get input from the user\n",
+        "num = int(input(\"Enter a number to find its factorial: \"))\n",
+        "\n",
+        "# Ensure the number is non-negative\n",
+        "if num < 0:\n",
+        "    print(\"Factorial is not defined for negative numbers.\")\n",
+        "else:\n",
+        "    # Call the factorial function and print the result\n",
+        "    result = factorial(num)\n",
+        "    print(f\"The factorial of {num} is {result}.\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1UVrSUlCZs6L",
+        "outputId": "8659db72-6b6d-4c0c-b896-196846315532"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter a number to find its factorial: 4\n",
+            "The factorial of 4 is 24.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "(c): Write the python program ot find the sum of the first 10 numbers."
+      ],
+      "metadata": {
+        "id": "alA2eJvmZ4f9"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Initialize the sum\n",
+        "total_sum = 0\n",
+        "\n",
+        "# Loop through the first 10 numbers (from 1 to 10)\n",
+        "for i in range(1, 11):\n",
+        "    total_sum += i  # Add each number to the total sum\n",
+        "\n",
+        "# Print the result\n",
+        "print(\"The sum of the first 10 numbers is:\", total_sum)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ffXrBtvAaWFQ",
+        "outputId": "32800430-8a7a-45e1-fc22-7fab810b8c08"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The sum of the first 10 numbers is: 55\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "3Q:Given the list:list =[2,3,4,5,6,-1,-3,-5,\"bca\",\"section-b\",\"hello\",\"boys and girls\"].\n",
+        "   (a) Extract the negatiev number."
+      ],
+      "metadata": {
+        "id": "zvLZIkiHabiL"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Given list\n",
+        "list_data = [2, 3, 4, 5, 6, -1, -3, -5, \"bca\", \"section-b\", \"hello\", \"boys and girls\"]\n",
+        "\n",
+        "# Extract negative numbers using list comprehension\n",
+        "negative_numbers = [x for x in list_data if isinstance(x, int) and x < 0]\n",
+        "\n",
+        "# Print the negative numbers\n",
+        "print(\"Negative numbers:\", negative_numbers)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ytwQcGXXc_cf",
+        "outputId": "695776c5-e07e-4cb2-e550-9e3a91cc402a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Negative numbers: [-1, -3, -5]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "(B) Extract the positive numbers."
+      ],
+      "metadata": {
+        "id": "HG9NtDgudaFb"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Given list\n",
+        "list_data = [2, 3, 4, 5, 6, -1, -3, -5, \"bca\", \"section-b\", \"hello\", \"boys and girls\"]\n",
+        "\n",
+        "# Extract positive numbers using list comprehension\n",
+        "positive_numbers = [x for x in list_data if isinstance(x, int) and x > 0]\n",
+        "\n",
+        "# Print the positive numbers\n",
+        "print(\"Positive numbers:\", positive_numbers)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uMXpUMvWd_Vp",
+        "outputId": "f36194e9-3d1d-460b-dffa-a0d716f22dc0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Positive numbers: [2, 3, 4, 5, 6]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "(c): Exteract the even numbers."
+      ],
+      "metadata": {
+        "id": "_MfGEk37eCjx"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Given list\n",
+        "list_data = [2, 3, 4, 5, 6, -1, -3, -5, \"bca\", \"section-b\", \"hello\", \"boys and girls\"]\n",
+        "\n",
+        "# Extract even numbers using list comprehension\n",
+        "even_numbers = [x for x in list_data if isinstance(x, int) and x % 2 == 0]\n",
+        "\n",
+        "# Print the even numbers\n",
+        "print(\"Even numbers:\", even_numbers)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "G_0rtSvIepq_",
+        "outputId": "c255882b-f32a-4c4d-a6d7-bcb01b948b77"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Even numbers: [2, 4, 6]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "(d): Extract odd numbers."
+      ],
+      "metadata": {
+        "id": "NKctjvwge1DU"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Given list\n",
+        "list_data = [2, 3, 4, 5, 6, -1, -3, -5, \"bca\", \"section-b\", \"hello\", \"boys and girls\"]\n",
+        "\n",
+        "# Extract odd numbers using list comprehension\n",
+        "odd_numbers = [x for x in list_data if isinstance(x, int) and x % 2 != 0]\n",
+        "\n",
+        "# Print the odd numbers\n",
+        "print(\"Odd numbers:\", odd_numbers)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9jrb5CBrfJnc",
+        "outputId": "4fa68a3f-57b8-4264-eb84-1a3e7eaaca83"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Odd numbers: [3, 5, -1, -3, -5]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "(e): Extract the strings."
+      ],
+      "metadata": {
+        "id": "nzZ6IMTbfpwf"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Given list\n",
+        "list_data = [2, 3, 4, 5, 6, -1, -3, -5, \"bca\", \"section-b\", \"hello\", \"boys and girls\"]\n",
+        "\n",
+        "# Extract strings using list comprehension\n",
+        "strings = [x for x in list_data if isinstance(x, str)]\n",
+        "\n",
+        "# Print the strings\n",
+        "print(\"Strings:\", strings)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "X-KsNjvAfz99",
+        "outputId": "e24e8510-0943-4c01-e25c-f5421d4a391a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Strings: ['bca', 'section-b', 'hello', 'boys and girls']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "(f): Extract the multiples of 3."
+      ],
+      "metadata": {
+        "id": "VL5rkePjgDVW"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Given list\n",
+        "list_data = [2, 3, 4, 5, 6, -1, -3, -5, \"bca\", \"section-b\", \"hello\", \"boys and girls\"]\n",
+        "\n",
+        "# Extract multiples of 3 using list comprehension\n",
+        "multiples_of_3 = [x for x in list_data if isinstance(x, int) and x % 3 == 0]\n",
+        "\n",
+        "# Print the multiples of 3\n",
+        "print(\"Multiples of 3:\", multiples_of_3)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kbwQbnz0gTkj",
+        "outputId": "9429b5c4-3833-4bc5-979c-c93402829352"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Multiples of 3: [3, 6, -3]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# New Section"
+      ],
+      "metadata": {
+        "id": "MNsFAmAfg2kA"
+      }
+    }
+  ]
+}
