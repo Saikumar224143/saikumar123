@@ -15,14 +15,16 @@
       "name": "python"
     }
   },
-  "cells": [
+  "cells type code",
     {
       "cell_type": "markdown",
       "metadata": {
         "id": "view-in-github",
         "colab_type": "text"
       },
-      "source": [
+      "source": [ 
+   "#updated code\n",
+   "input........\n",
         "<a href=\"https://colab.research.google.com/github/Saikumar224143/saikumar123/blob/main/sai_kumar__152.\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
       ]
     },
